@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SurvRoom
+  - TestRoom
   - 
   - 
   - 
@@ -55,3 +55,5 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  - SurvRoom
+  - TestingRoom

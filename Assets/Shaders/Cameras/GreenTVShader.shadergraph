@@ -2195,7 +2195,7 @@
     "isMainTexture": false,
     "useTilingAndOffset": false,
     "useTexelSize": true,
-    "isHDR": false,
+    "isHDR": true,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
@@ -5394,10 +5394,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -473.3332824707031,
-            "y": 114.66667175292969,
-            "width": 0.0,
-            "height": 0.0
+            "x": -585.3333129882813,
+            "y": 108.66667175292969,
+            "width": 160.66665649414063,
+            "height": 35.99998474121094
         }
     },
     "m_Slots": [
