@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164906603}
   - component: {fileID: 164906602}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,13 +203,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164906601}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.61, y: 0.121, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.38278592, y: 0.38547385, z: -0.59158784, w: 0.59574217}
+  m_LocalPosition: {x: 16.65, y: 3.89, z: 15.49}
+  m_LocalScale: {x: 5.0305, y: 5.0305, z: 5.0305}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 65.81, z: -89.599}
 --- !u!1 &670230646
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670230648}
   - component: {fileID: 670230647}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770226757}
   - component: {fileID: 770226756}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Sprite Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,13 +378,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770226755}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.6867072, w: -0.7269342}
+  m_LocalRotation: {x: -0, y: -0, z: 0.020058779, w: -0.9997988}
   m_LocalPosition: {x: 20.7, y: -5.18, z: 0}
   m_LocalScale: {x: 21.721489, y: 40.702198, z: 0.90003914}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -273.26}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -362.299}
 --- !u!1 &892671592
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 892671595}
   - component: {fileID: 892671594}
   - component: {fileID: 892671593}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,13 +490,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892671592}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15185153, y: -0.42067218, z: 0.0022977605, w: 0.89441085}
+  m_LocalRotation: {x: -0.1276272, y: -0.83027697, z: 0.082313195, w: 0.53626114}
   m_LocalPosition: {x: 14.09, y: -1.55, z: -2.62}
-  m_LocalScale: {x: 2.4468, y: 3.4114, z: 1}
+  m_LocalScale: {x: 5.490387, y: 3.3913069, z: 0.99411}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -15.647, y: -51.462, z: 7.871}
+  m_LocalEulerAnglesHint: {x: -0.011, y: -114.286, z: 17.47}
 --- !u!1 &1430551744
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 1430551746}
   - component: {fileID: 1430551745}
   - component: {fileID: 1430551748}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,8 +646,8 @@ GameObject:
   - component: {fileID: 1918242607}
   - component: {fileID: 1918242606}
   - component: {fileID: 1918242605}
-  m_Layer: 7
-  m_Name: TV1_CAM
+  m_Layer: 8
+  m_Name: TV2_CAM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 128
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 428e44740ccd0c140a7fa25083d7fb77, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 42b043b6592597f4c94d26e9ba7ac02f, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -781,7 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936028386}
   - component: {fileID: 1936028385}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,8 +856,8 @@ Transform:
   m_GameObject: {fileID: 1936028384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.573, y: -0.905, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 18.78, y: -3.1801, z: 0}
+  m_LocalScale: {x: 4.0288, y: 4.0288, z: 4.0288}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RenderTexture:
-        m_Texture: {fileID: 8400000, guid: 428e44740ccd0c140a7fa25083d7fb77, type: 2}
+        m_Texture: {fileID: 8400000, guid: 42b043b6592597f4c94d26e9ba7ac02f, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -62,15 +62,15 @@ Material:
     - _NoiseSpeed: 1.7
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Resolution: 30.72
-    - _ScanLineIntensity: 1.63
+    - _Resolution: 25.69
+    - _ScanLineIntensity: 0.07
     - _ScanLineQty: 53.23
-    - _ScanLineSpeed: 0.32
+    - _ScanLineSpeed: -0.01
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Highlight: {r: 0.18553454, g: 1, b: 0.7846592, a: 1}
-    - _Lowlight: {r: 1, g: 1, b: 1, a: 1}
+    - _Highlight: {r: 0, g: 1, b: 0.73725486, a: 1}
+    - _Lowlight: {r: 0, g: 0.3963964, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScanLineColor: {r: 0.26274514, g: 1, b: 0.9643533, a: 1}
   m_BuildTextureStacks: []

@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class LoadCameras : MonoBehaviour
 {
     [Header("CRT Camera Scenes")]
-    [SerializeField] private string scene = "";
+    [SerializeField] private List<string> scenes = new List<string>();
     void Start()
     {
-        if(!SceneManager.GetSceneByName(scene).isLoaded)
+        foreach (var scene in scenes)
         {
-            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+            if (!SceneManager.GetSceneByName(scene).isLoaded)
+            {
+                SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+            }
         }
     }
 

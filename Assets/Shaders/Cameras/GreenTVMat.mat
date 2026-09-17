@@ -62,7 +62,7 @@ Material:
     - _NoiseSpeed: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Resolution: 35.03
+    - _Resolution: 35.12
     - _ScanLineIntensity: -0.02
     - _ScanLineQty: 12
     - _ScanLineSpeed: 3.3
