@@ -59,20 +59,20 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _NoiseSpeed: 0.5
+    - _NoiseSpeed: 1.7
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Resolution: 35.03
-    - _ScanLineIntensity: -0.02
-    - _ScanLineQty: 12
-    - _ScanLineSpeed: 3.3
+    - _Resolution: 30.72
+    - _ScanLineIntensity: 1.63
+    - _ScanLineQty: 53.23
+    - _ScanLineSpeed: 0.32
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Highlight: {r: 0, g: 1, b: 0.0666666, a: 1}
-    - _Lowlight: {r: 0.19045922, g: 0.43565843, b: 0.5660378, a: 1}
+    - _Highlight: {r: 0.18553454, g: 1, b: 0.7846592, a: 1}
+    - _Lowlight: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ScanLineColor: {r: 0.6582236, g: 0, b: 1, a: 1}
+    - _ScanLineColor: {r: 0.26274514, g: 1, b: 0.9643533, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3848859820001388899
