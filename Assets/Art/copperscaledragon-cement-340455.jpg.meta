@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e06f3f8d4e6c3ef4e80dbcbc4a51a6ea
+guid: b158f04d62e56144c9ee882b2952346c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3467437981887655870
-    second: the-metropolitan-museum-of-art-QqoR6REoJug-unsplash_0
+      213: 4954507451764662459
+    second: copperscaledragon-cement-340455_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: the-metropolitan-museum-of-art-QqoR6REoJug-unsplash_0
+      name: copperscaledragon-cement-340455_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2315
-        height: 3155
+        width: 3264
+        height: 2448
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24093e8d68f21efc0800000000000000
-      internalID: -3467437981887655870
+      spriteID: bb0657bf642f1c440800000000000000
+      internalID: 4954507451764662459
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      the-metropolitan-museum-of-art-QqoR6REoJug-unsplash_0: -3467437981887655870
+      copperscaledragon-cement-340455_0: 4954507451764662459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
