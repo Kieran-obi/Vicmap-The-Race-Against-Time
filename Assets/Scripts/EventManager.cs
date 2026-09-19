@@ -1,16 +1,20 @@
 using UnityEngine;
+using UnityEngine.Events;
+using System;
+using System.Collections.Generic;
 
 public class EventManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static event Action OnGridChanged;
+    public static event Action NewCivilianCall;
+
+    public static void TriggerGridChange()
     {
-        
+        OnGridChanged?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void TriggerCivilianCall()
     {
-        
+        NewCivilianCall?.Invoke();
     }
 }
