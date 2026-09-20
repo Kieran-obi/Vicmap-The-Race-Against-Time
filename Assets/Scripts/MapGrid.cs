@@ -7,8 +7,7 @@ public class MapGrid : MonoBehaviour
 {
     private static GameObject grid;
     private Area[,] cells;
-    [SerializeField] private int cell_width = 10;
-    [SerializeField] private int cell_height = 10;
+    
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void SpawnGrid()
@@ -28,6 +27,9 @@ public class MapGrid : MonoBehaviour
 
     private void BuildGrid()
     {
+        GameManager gameManager = FindFirstObjectByType<GameManager>();
+        int cell_width = gameManager.cell_width;
+        int cell_height = gameManager.cell_height;
         cells = new Area[cell_width, cell_height];
         float screenPosX = cell_width / 2f;
         float screenPosY = cell_height / 2f;
