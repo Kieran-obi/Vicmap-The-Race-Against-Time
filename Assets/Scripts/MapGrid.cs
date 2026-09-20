@@ -7,8 +7,8 @@ public class MapGrid : MonoBehaviour
 {
     private static GameObject grid;
     private Area[,] cells;
-    [SerializeField] private int width = 10;
-    [SerializeField] private int height = 10;
+    [SerializeField] private int cell_width = 10;
+    [SerializeField] private int cell_height = 10;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void SpawnGrid()
@@ -17,7 +17,8 @@ public class MapGrid : MonoBehaviour
         {
             grid = new GameObject("Grid");
             grid.transform.SetParent(EventManager.Instance.transform);
-            grid.AddComponent<MapGrid>();
+            MapGrid map = grid.AddComponent<MapGrid>();
+            EventManager.OnGameInitialised.AddListener(map.BuildGrid);
         }
         else
         {
@@ -27,14 +28,30 @@ public class MapGrid : MonoBehaviour
 
     private void BuildGrid()
     {
-        cells = new Area[width, height];
+        cells = new Area[cell_width, cell_height];
+        float screenPosX = cell_width / 2f;
+        float screenPosY = cell_height / 2f;
 
-        for (int x = 0; x < width; x++)
+        for (int x = 0; x < cell_width; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = 0; y < cell_height; y++)
             {
                 cells[x,y] = new Area(x,y, true);
+                GameObject gridTile = new GameObject($"Cell_{x}_{y}");
+                gridTile.transform.SetParent(this.transform);
+                gridTile.transform.localPosition = new Vector3((x - screenPosX) * 1f, (y - screenPosY) * 1f, 0);
+                SpriteRenderer renderer = gridTile.AddComponent<SpriteRenderer>();
+                renderer.sprite = FindAnyObjectByType<GameManager>().gridSprite;
+                renderer.color = Color.white;
             }
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(EventManager.Instance != null)
+        {
+            EventManager.OnGameInitialised.RemoveListener(BuildGrid);
         }
     }
 }
