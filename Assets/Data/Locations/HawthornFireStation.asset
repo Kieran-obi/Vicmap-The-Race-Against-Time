@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ad737d9acaa5f46bd17a8513a7bd7c, type: 3}
   m_Name: HawthornFireStation
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
-  locationName: 
-  gameX: 0
-  gameY: 0
+  locationName: Hawthorn Fire Station
+  gameX: 38.61
+  gameY: 56.61

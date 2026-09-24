@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56253a091dcdd3a4aa6d671fd8e6da52, type: 3}
   m_Name: CallExample
   m_EditorClassIdentifier: Assembly-CSharp::CallData
-  stormStage: 0
-  callerLocation: {fileID: 0}
-  actualLocation: {fileID: 0}
+  stormStage: 1
+  callerLocation: {fileID: 11400000, guid: b14aa802f49249c4684d6f3592776996, type: 2}
+  actualLocation: {fileID: 11400000, guid: b14aa802f49249c4684d6f3592776996, type: 2}
   claimType: 0
-  claimVars: []
+  claimVars:
+  - Hawthorn Fire Station
+  - a fallen tree
   issueType: 0
-  hasCamera: 0
+  hasCamera: 1
   cameraVisual: 0
-  civiliansAtRisk: 0
+  civiliansAtRisk: 1
