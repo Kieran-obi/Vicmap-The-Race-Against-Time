@@ -2,7 +2,7 @@ using UnityEngine;
 
 
 //the differnt types of reports from callers
-public enum ClaimType {RoadBlocked, Flooded, WrongLocation, PeopleTrapped, Clear, Uncertain}
+public enum CallClaimType {RoadBlocked, Flooded, WrongLocation, PeopleTrapped, Clear, Uncertain}
 //types of data errors in the call
 public enum IssueType {None, Missing, Misclassified, Outdated, Mislocated}
 //what the camera shows to the player if one exists at the location 
@@ -15,7 +15,7 @@ public class CallData : ScriptableObject
     public int stormStage; //1, 2 or 3
     public LocationData callerLocation; //where the caller is
     public LocationData actualLocation; //for misloacated calls, the location is different to the callers location
-    public ClaimType claimType; //claim template
+    public CallClaimType claimType; //claim template
     public string[] claimVars; //fills tempolate in order {0}, {1}
     public IssueType issueType; //none if the caller is right
     public bool hasCamera; //does a camera exist
