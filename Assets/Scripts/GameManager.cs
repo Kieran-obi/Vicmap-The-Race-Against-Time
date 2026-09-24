@@ -1,9 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 
-public class LoadCameras : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
+    [Header("Grid Settings")]
+    public Sprite gridSprite;
+    public int cell_width = 10;
+    public int cell_height = 10;
+
     [Header("CRT Camera Scenes")]
     [SerializeField] private List<string> scenes = new List<string>();
     void Start()
@@ -16,5 +21,4 @@ public class LoadCameras : MonoBehaviour
             }
         }
     }
-
 }
