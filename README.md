@@ -1,25 +1,24 @@
 # Vicmap: The Race against Time
 
-## Developed by:
+## Developed by
 
 - Niki D'Arcy
-- Dulara Prasad Rathnamalala Rathnamalala Bandaralage
+- Dulara Prasad Rathnamalala Rathnamalala Bandaralage (105518249)
 - Jericho Gonzalez
 - Kieran O'Brien (105179073)
 
 ## Game Description
 
- 
- ## Connection to Supplied Challenge 
- 
- ## Controls
- 
- ## How to Play
- 
- ## How to Run the Build
- 
- ## Key Programming Systems
- 
- ## Team Contributions
- 
- ## Known Issues
+## Connection to Supplied Challenge
+
+## Controls
+
+## How to Play
+
+## How to Run the Build
+
+## Key Programming Systems
+
+## Team Contributions
+
+## Known Issues
