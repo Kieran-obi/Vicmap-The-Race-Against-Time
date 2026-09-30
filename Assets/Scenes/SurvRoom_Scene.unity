@@ -2945,6 +2945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804760824}
   - component: {fileID: 1804760825}
+  - component: {fileID: 1804760826}
   m_Layer: 6
   m_Name: Game
   m_TagString: Untagged
@@ -2986,6 +2987,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d671d897c6c51e44e92988f0735e0817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventManager
+--- !u!114 &1804760826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804760823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd29306a7739c4144b09bea10ca28eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  gridSprite: {fileID: 0}
+  cell_width: 10
+  cell_height: 10
+  scenes:
+  - camera_testing
+  - camera_testing2
 --- !u!1 &1821056707
 GameObject:
   m_ObjectHideFlags: 0
