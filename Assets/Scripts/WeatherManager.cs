@@ -21,7 +21,13 @@ public class WeatherManager : MonoBehaviour
     public static event Action<WeatherEvent> OnWeatherEventFired;
 
     private float timer = 0f;
+    private float startTime = 0f;
     private List<ScheduledEvent> processedEvents = new List<ScheduledEvent>();
+
+    private void OnEnable()
+    {
+        startTime = Time.time;
+    }
 
     private void Update()
     {
@@ -32,7 +38,7 @@ public class WeatherManager : MonoBehaviour
         if (timer >= tickRate)
         {
             timer = 0f; // Reset the tick timer
-            CheckTimeline(Time.time);
+            CheckTimeline(Time.time-startTime);
         }
     }
 
