@@ -5,15 +5,6 @@ TextureImporter:
   - first:
       213: 7699255862130219199
     second: Flooding_0
-  - first:
-      213: 2165636852002300344
-    second: Flooding_1
-  - first:
-      213: 3027273867810694773
-    second: Flooding_2
-  - first:
-      213: 980717427626404591
-    second: Flooding_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -114,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 75
-        height: 45
+        width: 300
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,77 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Flooding_1
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 33
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b1a71c2e33ed0e10800000000000000
-      internalID: 2165636852002300344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flooding_2
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 33
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 576eda82b89030a20800000000000000
-      internalID: 3027273867810694773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flooding_3
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 34
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: feae4baed453c9d00800000000000000
-      internalID: 980717427626404591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Flooding_0: 7699255862130219199
-      Flooding_1: 2165636852002300344
-      Flooding_2: 3027273867810694773
-      Flooding_3: 980717427626404591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

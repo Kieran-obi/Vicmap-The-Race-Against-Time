@@ -5,18 +5,6 @@ TextureImporter:
   - first:
       213: 966744405766871612
     second: RoadBlocks_0
-  - first:
-      213: -7221367631511028437
-    second: RoadBlocks_1
-  - first:
-      213: -3998489832164219520
-    second: RoadBlocks_2
-  - first:
-      213: 6205815742667604546
-    second: RoadBlocks_3
-  - first:
-      213: 8613137974475572222
-    second: RoadBlocks_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
-        width: 28
-        height: 14
+        y: 0
+        width: 300
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,99 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RoadBlocks_1
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 33
-        width: 11
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2df74b466c88cb90800000000000000
-      internalID: -7221367631511028437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoadBlocks_2
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 34
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08527dbbea28288c0800000000000000
-      internalID: -3998489832164219520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoadBlocks_3
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 33
-        width: 36
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 242ca33c98c7f1650800000000000000
-      internalID: 6205815742667604546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RoadBlocks_4
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 0
-        width: 77
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef34b0a7a53088770800000000000000
-      internalID: 8613137974475572222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       RoadBlocks_0: 966744405766871612
-      RoadBlocks_1: -7221367631511028437
-      RoadBlocks_2: -3998489832164219520
-      RoadBlocks_3: 6205815742667604546
-      RoadBlocks_4: 8613137974475572222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
