@@ -3675,8 +3675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48fd03bc4132bba46bcadeb95c914fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CallManager
-  dialogueText: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  dialogueText: {fileID: 1846080384}
+  dialogueBox: {fileID: 1343135688}
   allCalls:
   - {fileID: 11400000, guid: f6e4b980a59bbed47ada064a94e388cd, type: 2}
 --- !u!4 &2136468285
