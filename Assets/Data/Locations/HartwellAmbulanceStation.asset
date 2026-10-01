@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ad737d9acaa5f46bd17a8513a7bd7c, type: 3}
   m_Name: HartwellAmbulanceStation
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
-  locationName: Glen Iris Private
-  gameX: 89.48
-  gameY: 18.54
-  mapAnchoredPosition: {x: 69, y: 175}
+  locationName: Hartwell Ambulance Station (Bowen St)
+  gameX: 71.33
+  gameY: 29.54
+  mapAnchoredPosition: {x: 460, y: -227}
