@@ -12,9 +12,9 @@ public static class DialogueTemplates
     {
         {CallClaimType.RoadBlocked, "The road infront of {0} is blocked, cars can't get through because of {1}."},
         {CallClaimType.Flooded, "The area around {0} is flooded, there are {1} people who are stuggling to deal with it!"},
-        {CallClaimType.WrongLocation, "I'm standing infront of {0}, there are powerlines down and electricity out."},
+        {CallClaimType.WrongLocation, "I'm standing infront of {0}, there are powerlines down and electricity out. The road is {1}."},
         {CallClaimType.PeopleTrapped, "There are people trapped inside {0}, there are {1} blocking the exits!"},
-        {CallClaimType.Clear, "Everything looks okay at {0}, nothing to report, just thought you could use the info, it's getting wild out here!"},
+        {CallClaimType.Clear, "Everything looks okay at {0}, could be used as {1}, just thought you could use the info, it's getting wild out here!"},
         {CallClaimType.Uncertain, "Can't really tell from here but I think {0} is getting {1}. Hope this helps!"}
         //more to come!
     };
