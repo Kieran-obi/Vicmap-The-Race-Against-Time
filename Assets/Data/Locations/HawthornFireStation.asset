@@ -15,3 +15,4 @@ MonoBehaviour:
   locationName: Hawthorn Fire Station
   gameX: 38.61
   gameY: 56.61
+  mapAnchoredPosition: {x: -152, y: 38}

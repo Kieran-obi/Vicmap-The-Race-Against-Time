@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WeatherManager : MonoBehaviour
 {
+    public static WeatherManager Instance;
+    public bool isPaused = false;
     // A simple wrapper structure that displays nicely in Unity's Inspector
     [Serializable]
     public struct ScheduledEvent
@@ -21,24 +23,27 @@ public class WeatherManager : MonoBehaviour
     public static event Action<WeatherEvent> OnWeatherEventFired;
 
     private float timer = 0f;
-    private float startTime = 0f;
+    private float elapsedRunTime = 0f;
     private List<ScheduledEvent> processedEvents = new List<ScheduledEvent>();
 
-    private void OnEnable()
+    private void Awake()
     {
-        startTime = Time.time;
+        Instance = this;
     }
 
     private void Update()
     {
+        Debug.Log($"isPaused: {isPaused}, elapsedRunTime: {elapsedRunTime}");
+        if (isPaused) return;
         // Increment the background timer over time
         timer += Time.deltaTime;
+        elapsedRunTime += Time.deltaTime;
 
         // Every time the timer crosses the tick rate threshold
         if (timer >= tickRate)
         {
             timer = 0f; // Reset the tick timer
-            CheckTimeline(Time.time-startTime);
+            CheckTimeline(elapsedRunTime);
         }
     }
 

@@ -11,13 +11,17 @@ public class CallManager : MonoBehaviour
     public List<CallData> allCalls; //drag all call assets here
     private List<CallData> currentStageQueue;
     private int currentStage = 1;
+    public GameObject dialoguePanel; // the parent object holding the Image + text
 
     //filters calls down to the current storm stage
     public void StartStage(int stage)
     {
         currentStageQueue = allCalls.Where(c => c.stormStage == stage).ToList();
-        AudioManager.Instance.SetStormStage(stage);
+        if (AudioManager.Instance != null) AudioManager.Instance.SetStormStage(stage);
         currentStage++;
+
+        if (currentStageQueue.Count > 0)
+            DisplayCall(currentStageQueue[0]);
     }
 
     //gets the sentence for whatever call is active
@@ -27,8 +31,15 @@ public class CallManager : MonoBehaviour
     //textbox 
     public void DisplayCall(CallData call)
     {
+        dialoguePanel.SetActive(true);
         dialogueText.text = GetCurrentDialogue(call);
         LayoutRebuilder.ForceRebuildLayoutImmediate(dialogueBox);
+        if (WeatherManager.Instance != null) WeatherManager.Instance.isPaused = true;
+    }
+    public void OnContinuePressed()
+    {
+        dialoguePanel.SetActive(false);
+        if (WeatherManager.Instance != null) WeatherManager.Instance.isPaused = false;
     }
 
     private void OnEnable()

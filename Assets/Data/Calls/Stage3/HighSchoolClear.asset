@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56253a091dcdd3a4aa6d671fd8e6da52, type: 3}
-  m_Name: CallData
+  m_Name: HighSchoolClear
   m_EditorClassIdentifier: Assembly-CSharp::CallData
-  stormStage: 0
-  callerLocation: {fileID: 0}
-  actualLocation: {fileID: 0}
-  claimType: 0
-  claimVars: []
-  issueType: 0
-  hasCamera: 0
-  cameraVisual: 0
-  civiliansAtRisk: 0
+  stormStage: 3
+  callerLocation: {fileID: 11400000, guid: c99ddc75298928446bd1810446255e55, type: 2}
+  actualLocation: {fileID: 11400000, guid: c99ddc75298928446bd1810446255e55, type: 2}
+  claimType: 4
+  claimVars:
+  - Camberwell High School
+  - a place for refuge
+  issueType: 2
+  hasCamera: 1
+  cameraVisual: 3
+  civiliansAtRisk: 3
