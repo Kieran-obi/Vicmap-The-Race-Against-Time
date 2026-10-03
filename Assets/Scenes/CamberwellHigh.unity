@@ -153,7 +153,7 @@ MonoBehaviour:
   cell_width: 10
   cell_height: 10
   allCams: []
-  default_cam: {fileID: 0}
+  allGames: []
   scenes_name: []
   allScenes: []
 --- !u!4 &5941772
@@ -190,9 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316e27abefa9ed447a43afe91e07c97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
-  this_cam: {fileID: 1747562475}
-  this_cam_name: 
-  this_scene: 
+  target_cam_name: 
+  target_scene: 
 --- !u!1 &29222985
 GameObject:
   m_ObjectHideFlags: 0

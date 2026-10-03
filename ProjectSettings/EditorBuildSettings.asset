@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SurvRoom_Scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/camera_testing.unity
+    path: Assets/Scenes/KewAmboStation.unity
     guid: 7655f6b387ec4274bbd7019a1a7b4244
-  - enabled: 1
-    path: Assets/Scenes/camera_testing2.unity
-    guid: 4c3e5fec70e2162479bd52c6393c5b99
+  - enabled: 0
+    path: Assets/Scenes/KewAmboStation.unity
+    guid: 7655f6b387ec4274bbd7019a1a7b4244
   - enabled: 1
     path: Assets/Scenes/CamberwellHigh.unity
     guid: 3268933c62f8cd24eb5b220760a604c4

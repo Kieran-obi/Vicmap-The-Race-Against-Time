@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [Header("Active Cameras")]
     //public List<Camera> allCams = new List<Camera>();
     public Camera[] allCams;
-    public Camera default_cam;
+    private Camera default_cam;
 
     [Header("CRT Camera Scenes")]
     [SerializeField] private List<string> scenes_name = new List<string>();
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
                 {
                     game.SetActive(false);
                 }
-                else if (game.scene.name == "camera_testing2")
+                else if (game.scene.name == "KewAmboStation")
                 {
                     game.SetActive(false);
                 }
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
             {
                 cam.enabled = false;
             }
-            if (cam.name == "Test_MainCamera")
+            if (cam.name == "KewAmbo_MainCamera")
             {
                 cam.enabled = false;
             }
