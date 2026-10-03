@@ -9,8 +9,8 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
     private Vector2 _distance;
     public GameObject note;
     public Transform parent;
-    public List<GameObject> notes = new List<GameObject>();
-    bool selected = false;
+    private List<GameObject> notes = new List<GameObject>();
+
 
     public void Start()
     { 
@@ -29,7 +29,7 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        selected = true;
+        
         //create new note
         if (notes[0])
         {

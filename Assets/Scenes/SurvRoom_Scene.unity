@@ -219,6 +219,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 17615248}
+  - component: {fileID: 17615249}
+  - component: {fileID: 17615250}
   m_Layer: 6
   m_Name: TV 1
   m_TagString: Untagged
@@ -226,16 +228,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &17615248
-Transform:
+--- !u!224 &17615248
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17615247}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.45, y: -3.31, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -243,6 +244,73 @@ Transform:
   - {fileID: 1821720453}
   m_Father: {fileID: 57528483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.45, y: -3.31}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &17615249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17615247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316e27abefa9ed447a43afe91e07c97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
+  this_cam: {fileID: 0}
+  this_cam_name: Highschool_MainCamera
+  this_game: {fileID: 1804760823}
+  this_scene: CamberwellHigh
+--- !u!61 &17615250
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17615247}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 2.4532967, y: 2.895521}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.2424433, y: 2.2213836}
+  m_EdgeRadius: 0
 --- !u!1 &57528482
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PinBoard
   note: {fileID: 341239915}
   parent: {fileID: 724898408}
-  notes: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +1004,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   m_Layer: 6
-  m_Name: Main Camera
+  m_Name: Surv_MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1075,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
   m_EventMask:
     serializedVersion: 2
-    m_Bits: 97
+    m_Bits: 4294967295
   m_MaxRayIntersections: 0
 --- !u!1 &609376744
 GameObject:
@@ -2528,7 +2595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -324.99997}
+  m_AnchoredPosition: {x: 0, y: -325}
   m_SizeDelta: {x: 400, y: -409.77994}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1343135689
@@ -3047,7 +3114,7 @@ GameObject:
   - component: {fileID: 1804760826}
   m_Layer: 6
   m_Name: Game
-  m_TagString: Untagged
+  m_TagString: Game
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3101,9 +3168,13 @@ MonoBehaviour:
   gridSprite: {fileID: 0}
   cell_width: 10
   cell_height: 10
-  scenes:
+  allCams:
+  - {fileID: 0}
+  default_cam: {fileID: 0}
+  scenes_name:
   - CamberwellHigh
   - camera_testing2
+  allScenes: []
 --- !u!1 &1821056707
 GameObject:
   m_ObjectHideFlags: 0
