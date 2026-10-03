@@ -7,9 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private GameObject[] tag1;
-    private GameObject[] tag2;
-    private GameObject[] tag3;
     private GameObject[] game_parent;
     [Header("Grid Settings")]
     public Sprite gridSprite;
@@ -78,7 +75,11 @@ public class GameManager : MonoBehaviour
                 {
                     game.SetActive(false);
                 }
-            
+                else if (game.scene.name == "MapTest")
+                {
+                    game.SetActive(false);
+                }
+
         }
         
     }
@@ -98,6 +99,10 @@ public class GameManager : MonoBehaviour
                 cam.enabled = false;
             }
             if (cam.name == "Test_MainCamera")
+            {
+                cam.enabled = false;
+            }
+            if (cam.name == "Map_MainCamera")
             {
                 cam.enabled = false;
             }
