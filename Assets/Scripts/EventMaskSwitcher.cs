@@ -23,11 +23,11 @@ public class EventMaskSwitcher : MonoBehaviour
                 ray.eventMask = LayerMask.GetMask("SurvRoom");
                 foreach(Camera other_cam in gameManager.allCams)
                 {
-                    if(other_cam.name == "Map_MainCamera" && !cam.enabled)
+                    if(other_cam.name == "Map_MainCamera" && !cam.enabled && other_cam.enabled)
                     {
                         ray.eventMask = LayerMask.GetMask("Map");
                     }
-                    else if(other_cam.name == "Highschool_MainCamera" && !cam.enabled)
+                    else if (other_cam.name == "Highschool_MainCamera" && !cam.enabled && other_cam.enabled)
                     {
                         ray.eventMask = LayerMask.GetMask("CamberwellHigh");
                     }
