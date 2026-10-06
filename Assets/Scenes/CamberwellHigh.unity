@@ -153,7 +153,6 @@ MonoBehaviour:
   cell_width: 10
   cell_height: 10
   allCams: []
-  allGames: []
   scenes_name: []
   allScenes: []
 --- !u!4 &5941772
@@ -191,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
   target_cam_name: 
-  target_scene: 
+  target_obj: 
 --- !u!1 &29222985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,7 +4172,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 128
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

@@ -9,12 +9,12 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour, IPointerDownHandler
 {
     public string target_cam_name;
-    public GameObject target_obj;
+    public string target_obj;
     //public string target_scene;
     public void OnPointerDown(PointerEventData eventData)
     {
         GameManager gameManager = FindFirstObjectByType<GameManager>();
         gameManager.setCameras(target_cam_name);
-        gameManager.setGame(target_obj);
+        //gameManager.setGame(target_obj);
     }
 }

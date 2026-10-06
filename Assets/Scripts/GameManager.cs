@@ -115,20 +115,7 @@ public class GameManager : MonoBehaviour
         return current_scene;
     }
 
-    public void setGame(GameObject obj)
-    {
-        foreach (var game in game_parent)
-        {
-            if (game == obj)
-            {
-                game.SetActive(false);
-            }
-            else
-            {
-                game.SetActive(true);
-            }
-        }
-    }
+    
 
     public void setCameras(string name)
     {
