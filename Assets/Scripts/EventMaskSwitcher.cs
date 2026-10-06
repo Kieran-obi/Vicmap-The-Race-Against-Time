@@ -31,6 +31,10 @@ public class EventMaskSwitcher : MonoBehaviour
                     {
                         ray.eventMask = LayerMask.GetMask("CamberwellHigh");
                     }
+                    else if (other_cam.name == "KewAmbo_MainCamera" && !cam.enabled && other_cam.enabled)
+                    {
+                        ray.eventMask = LayerMask.GetMask("KewAmbo");
+                    }
                 }
             }
         }

@@ -4017,7 +4017,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1343135688}
   allCalls:
   - {fileID: 11400000, guid: f6e4b980a59bbed47ada064a94e388cd, type: 2}
-  dialoguePanel: {fileID: 0}
+  dialoguePanel: {fileID: 1343135687}
 --- !u!4 &2136468285
 Transform:
   m_ObjectHideFlags: 0
