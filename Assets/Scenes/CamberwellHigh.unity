@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5941772}
   - component: {fileID: 5941771}
-  - component: {fileID: 5941773}
   - component: {fileID: 5941774}
   m_Layer: 7
   m_Name: Game
@@ -182,20 +181,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.0855, y: 3.8118}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5941773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5941770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316e27abefa9ed447a43afe91e07c97c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
-  target_cam_name: Surv_MainCamera
-  target_obj: 
 --- !u!222 &5941774
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1756,7 +1741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
   target_cam_name: Surv_MainCamera
-  target_obj: 
 --- !u!1 &850327323
 GameObject:
   m_ObjectHideFlags: 0
