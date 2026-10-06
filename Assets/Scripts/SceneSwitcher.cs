@@ -13,6 +13,8 @@ public class SceneSwitcher : MonoBehaviour, IPointerDownHandler
     //public string target_scene;
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (eventData.pressEventCamera == null || !eventData.pressEventCamera.enabled) return;
+
         GameManager gameManager = FindFirstObjectByType<GameManager>();
         gameManager.setCameras(target_cam_name);
         //gameManager.setGame(target_obj);
