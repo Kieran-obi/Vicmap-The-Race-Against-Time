@@ -57,6 +57,21 @@ TagManager:
   - name: Above
     uniqueID: 3445614939
     locked: 0
+  - name: cam_bg
+    uniqueID: 3586858935
+    locked: 0
+  - name: cam_tables
+    uniqueID: 2777159007
+    locked: 0
+  - name: cam_middle
+    uniqueID: 1578261161
+    locked: 0
+  - name: cam_fooreground
+    uniqueID: 1801285693
+    locked: 0
+  - name: cam_above
+    uniqueID: 432241953
+    locked: 0
   m_RenderingLayers:
   - Default
   - SurvRoom

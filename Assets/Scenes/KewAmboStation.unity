@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164906603}
   - component: {fileID: 164906602}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670230648}
   - component: {fileID: 670230647}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770226757}
   - component: {fileID: 770226756}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Sprite Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 892671595}
   - component: {fileID: 892671594}
   - component: {fileID: 892671593}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,9 +507,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1056571256}
   - component: {fileID: 1056571255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Game
-  m_TagString: Game
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,7 +530,6 @@ MonoBehaviour:
   cell_width: 10
   cell_height: 10
   allCams: []
-  allGames: []
   scenes_name: []
   allScenes: []
 --- !u!4 &1056571256
@@ -837,7 +836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936028386}
   - component: {fileID: 1936028385}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
