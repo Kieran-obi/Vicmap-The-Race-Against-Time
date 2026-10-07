@@ -57,6 +57,11 @@ TagManager:
   - name: Above
     uniqueID: 3445614939
     locked: 0
+  - name: Characters
+    uniqueID: 3794721227
+    locked: 0
+  - name: Furniture
+    uniqueID: 4260050763
   - name: cam_bg
     uniqueID: 3586858935
     locked: 0
