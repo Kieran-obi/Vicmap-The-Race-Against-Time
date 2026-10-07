@@ -1476,6 +1476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2498323202397490057, guid: 33acc5f9c1bf6e9499ae7bc2486e6825, type: 3}
+      propertyPath: phoneRing
+      value: 
+      objectReference: {fileID: 8300000, guid: 97cfd24ba280df6419c1a22e420b11af, type: 3}
     - target: {fileID: 2645810995242897858, guid: 33acc5f9c1bf6e9499ae7bc2486e6825, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1061.6669

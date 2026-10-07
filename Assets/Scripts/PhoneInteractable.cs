@@ -12,6 +12,8 @@ public class PhoneInteractable : InteractableObject
 
     [HideInInspector] public bool isRinging = false;
 
+    public CallManager callManager; 
+
     void Start()
     {
         if (phoneRenderer != null && offSprite != null)
@@ -25,6 +27,11 @@ public class PhoneInteractable : InteractableObject
         isRinging = ringing;
         if (phoneRenderer == null) return;
         phoneRenderer.sprite = ringing ? callSprite : offSprite;
+        if (AudioManager.Instance != null)
+        {
+            if (ringing) AudioManager.Instance.StartRinging();
+            else AudioManager.Instance.StopRinging();
+        }
     }
 
     protected override void Interact()
@@ -34,9 +41,6 @@ public class PhoneInteractable : InteractableObject
             Debug.Log("[Phone] Nothing to answer right now.");
             return;
         }
-
-        Debug.Log($"[Phone] Answering call - would load scene: {targetSceneName}");
-        SetRinging(false);
-        // SceneManager.LoadScene(targetSceneName);
+        callManager.AnswerPhone();
     }
 }

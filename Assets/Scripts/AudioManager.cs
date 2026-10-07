@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     AudioSource sfxSource;
     AudioSource ambienceSource;
     AudioSource musicSource;
+    AudioSource ringSource;
 
     void Awake()
     {
@@ -36,6 +37,18 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = backgroundMusic;
         musicSource.volume = musicVolume;
         musicSource.Play();
+        ringSource = gameObject.AddComponent<AudioSource>();
+        ringSource.loop = true;
+        ringSource.clip = phoneRing;
+    }
+
+    public void StartRinging()
+    {
+        if (!ringSource.isPlaying) ringSource.Play();
+    }
+    public void StopRinging()
+    {
+        ringSource.Stop();
     }
 
     public void PlaySFX(AudioClip clip) => sfxSource.PlayOneShot(clip);
