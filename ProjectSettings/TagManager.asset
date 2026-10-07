@@ -16,7 +16,7 @@ TagManager:
   - CamberwellHigh
   - KewAmbo
   - Map
-  - 
+  - PinBoard
   - 
   - 
   - 
@@ -62,6 +62,7 @@ TagManager:
     locked: 0
   - name: Furniture
     uniqueID: 4260050763
+    locked: 0
   - name: cam_bg
     uniqueID: 3586858935
     locked: 0
