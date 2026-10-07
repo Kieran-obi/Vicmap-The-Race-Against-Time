@@ -57,6 +57,12 @@ TagManager:
   - name: Above
     uniqueID: 3445614939
     locked: 0
+  - name: Characters
+    uniqueID: 3794721227
+    locked: 0
+  - name: Furniture
+    uniqueID: 4260050763
+    locked: 0
   m_RenderingLayers:
   - Default
   - SurvRoom
