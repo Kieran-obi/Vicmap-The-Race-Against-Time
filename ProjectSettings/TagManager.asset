@@ -13,9 +13,9 @@ TagManager:
   - Water
   - UI
   - SurvRoom
-  - TestRoom
-  - TestRoom2
-  - 
+  - CamberwellHigh
+  - KewAmbo
+  - Map
   - 
   - 
   - 
@@ -57,11 +57,41 @@ TagManager:
   - name: Above
     uniqueID: 3445614939
     locked: 0
+
   - name: Characters
     uniqueID: 3794721227
     locked: 0
   - name: Furniture
     uniqueID: 4260050763
+  - name: cam_bg
+    uniqueID: 3586858935
+    locked: 0
+  - name: cam_tables
+    uniqueID: 2777159007
+    locked: 0
+  - name: cam_middle
+    uniqueID: 1578261161
+    locked: 0
+  - name: cam_foreground
+    uniqueID: 1801285693
+    locked: 0
+  - name: cam_above
+    uniqueID: 432241953
+    locked: 0
+  - name: kew_bg
+    uniqueID: 2635024123
+    locked: 0
+  - name: kew_tables
+    uniqueID: 3489879677
+    locked: 0
+  - name: kew_middle
+    uniqueID: 1383948627
+    locked: 0
+  - name: kew_foreground
+    uniqueID: 3385704953
+    locked: 0
+  - name: kew_above
+    uniqueID: 1270409477
     locked: 0
   m_RenderingLayers:
   - Default
