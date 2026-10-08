@@ -42,9 +42,8 @@ public class WeatherManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"isPaused: {isPaused}, elapsedRunTime: {elapsedRunTime}");
         if (isPaused) return;
-        // Increment the background timer over time
+        //increment the background timer over time
         timer += Time.deltaTime;
         elapsedRunTime += Time.deltaTime;
 

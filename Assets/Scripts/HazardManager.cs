@@ -109,4 +109,26 @@ public class HazardManager : MonoBehaviour
             draggable.dragLayer = dragLayer;
         }
     }
+
+    public List<HazardData> GetCurrentHazards()
+    {
+    var list = new List<HazardData>();
+    foreach (Transform child in transform)
+    {
+        var d = child.GetComponent<HazardDraggable>();
+        if (d == null) continue;
+        var rt = child.GetComponent<RectTransform>();
+        list.Add(new HazardData { type = d.hazardType, x = rt.anchoredPosition.x, y = rt.anchoredPosition.y });
+    }
+    return list;
+    }
+
+    public void ClearAll()
+    {
+        var kids = new List<Transform>();
+        foreach (Transform c in transform) kids.Add(c);
+        foreach (var c in kids) { c.SetParent(null); Destroy(c.gameObject); }
+        SaveHazards();
+    }
+
 }

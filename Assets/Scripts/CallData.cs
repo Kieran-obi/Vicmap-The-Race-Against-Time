@@ -20,5 +20,12 @@ public class CallData : ScriptableObject
     public IssueType issueType; //none if the caller is right
     public bool hasCamera; //does a camera exist
     public CameraVisual cameraVisual; //what the camera shows 
-    public int civiliansAtRisk; //used for civilians saved?
+    public int civiliansAtRisk; //used for civilians saved
+
+        public string ExpectedHazardType() => claimType switch
+    {
+        CallClaimType.RoadBlocked => "RoadBlock",
+        CallClaimType.Flooded => "Flood",
+        _ => null
+    };
 }
