@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CameraDesk.unity
     guid: 4e4c9a1a769c58f4b84e42ef884f13e8
+  - enabled: 1
+    path: Assets/Scenes/Settings_Menu.unity
+    guid: 8e543d36303543247bfd2f690a61e378
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

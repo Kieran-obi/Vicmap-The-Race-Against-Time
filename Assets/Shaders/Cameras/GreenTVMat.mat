@@ -64,13 +64,13 @@ Material:
     - _QueueOffset: 0
     - _Resolution: 110.53
     - _ScanLineIntensity: -5.64
-    - _ScanLineQty: 19.9
+    - _ScanLineQty: 66.61
     - _ScanLineSpeed: 4.04
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Highlight: {r: 0, g: 1, b: 0.0666666, a: 1}
-    - _Lowlight: {r: 0.1355365, g: 0.41268831, b: 0.5597484, a: 1}
+    - _Lowlight: {r: 0, g: 0, b: 0, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScanLineColor: {r: 0.6588235, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []
