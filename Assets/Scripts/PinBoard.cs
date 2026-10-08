@@ -63,8 +63,7 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
     {
         _distance = Camera.main.ScreenToWorldPoint(eventData.position) - (Vector3)transform.position;
         addNote();
-        
-        
+        input.text = "";
     }
 
     public void addNote()
