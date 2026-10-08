@@ -35,6 +35,10 @@ public class EventMaskSwitcher : MonoBehaviour
                     {
                         ray.eventMask = LayerMask.GetMask("KewAmbo");
                     }
+                    else if (other_cam.name == "Pin_MainCamera" && !cam.enabled && other_cam.enabled)
+                    {
+                        ray.eventMask = LayerMask.GetMask("PinBoard");
+                    }
                 }
             }
         }

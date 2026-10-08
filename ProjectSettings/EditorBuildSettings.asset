@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapTest.unity
     guid: 3cddeb52202354b4cb78628ab75008cb
+  - enabled: 1
+    path: Assets/Scenes/PinBoard.unity
+    guid: 051ce84f9495fce4299cc7640ba3ca10
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

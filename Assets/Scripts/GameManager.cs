@@ -62,24 +62,26 @@ public class GameManager : MonoBehaviour
 
         foreach (var game in game_parent)
         {
-            
-                if (game.scene.name == "SurvRoom_Scene")
-                {
-                    game.SetActive(true);
-                }
-                else if (game.scene.name == "CamberwellHigh")
-                {
-                    game.SetActive(false);
-                }
-                else if (game.scene.name == "KewAmboStation")
-                {
-                    game.SetActive(false);
-                }
-                else if (game.scene.name == "MapTest")
-                {
-                    game.SetActive(false);
-                }
-
+            if (game.scene.name == "SurvRoom_Scene")
+            {
+                game.SetActive(true);
+            }
+            else if (game.scene.name == "CamberwellHigh")
+            {
+                game.SetActive(false);
+            }
+            else if (game.scene.name == "KewAmboStation")
+            {
+                game.SetActive(false);
+            }
+            else if (game.scene.name == "MapTest")
+            {
+                game.SetActive(false);
+            }
+            else if (game.scene.name == "PinBoard")
+            {
+                game.SetActive(false);
+            }
         }
         
     }
@@ -103,6 +105,10 @@ public class GameManager : MonoBehaviour
                 cam.enabled = false;
             }
             if (cam.name == "Map_MainCamera")
+            {
+                cam.enabled = false;
+            }
+            if (cam.name == "Pin_MainCamera")
             {
                 cam.enabled = false;
             }
