@@ -35,7 +35,7 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
         select = false;
       
         //text_obj = GetComponentInChildren<TextMeshPro>();
-        if(input  != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
+      //  if(input  != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
     }
 
     private void Update()
@@ -43,10 +43,11 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
         Camera this_cam = Camera.main;
         canvas.enabled = this_cam != null && this_cam.name == "Pin_MainCamera" && this_cam.isActiveAndEnabled;
     }
+    /*
     public void noteText(TextMeshPro obj, string text)
     {
         if(obj != null) obj.text = text;
-    }
+    }*/
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -76,7 +77,7 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
 
                 if (notes.Count < 20)
                 {
-                    if(new_note = Instantiate(note)){ added = true; }
+                    new_note = Instantiate(note);
                     new_text = new_note.GetComponentInChildren<TextMeshPro>();
 
                     new_note.transform.SetParent(parent);
@@ -85,15 +86,10 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
                         new_note.name = $"Note{i + 1}";
                         static_note = $"Note{i}";
                         note.name = static_note;
+                        new_note.name = $"text{i}";
                         
-                        for(int c = 0; c < transform.childCount; c++)
-                        {
-                            new_text.name = $"text{i}";
-                            new_text.text = input.text;
-                            text_obj = new_text;
-                        }
-                        if (input != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
                     }
+                    new_text.text = input.text;
                     coll.offset = Vector2.zero;
                     notes.Add(new_note);
                 }

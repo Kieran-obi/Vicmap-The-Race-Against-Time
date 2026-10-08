@@ -398,7 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PinBoard
   note: {fileID: 341239915}
   parent: {fileID: 724898408}
-  text_obj: {fileID: 0}
+  text_obj: {fileID: 1272716110}
   input: {fileID: 464407552}
   canvas: {fileID: 1707887075}
 --- !u!1 &464407550
