@@ -93,6 +93,9 @@ TagManager:
   - name: kew_above
     uniqueID: 1270409477
     locked: 0
+  - name: crt-ui
+    uniqueID: 2204911773
+    locked: 0
   m_RenderingLayers:
   - Default
   - SurvRoom
