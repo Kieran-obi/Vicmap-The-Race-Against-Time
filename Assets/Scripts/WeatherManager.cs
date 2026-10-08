@@ -28,7 +28,16 @@ public class WeatherManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        // The first WeatherManager keeps the slot. A duplicate (which
+        // WeatherManagerPersistence destroys) must not take it over.
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Debug.Log("[WeatherManager] Duplicate created - keeping the original as Instance.");
+        }
     }
 
     private void Update()
