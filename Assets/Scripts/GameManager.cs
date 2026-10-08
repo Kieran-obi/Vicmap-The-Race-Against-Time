@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
         foreach (var game in game_parent)
         {
-            if (game.scene.name == "SurvRoom_Scene")
+            if (game.scene.name == "VicmapRoom")
             {
                 game.SetActive(true);
             }
