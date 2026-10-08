@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using System;
 
+/* this script is not in use. It was made primarily to help with dijkstra 
+ * but it became too big for our scope and time constraints so was omitted
+ * from the final design. The grid loop logic was helped by google ai and
+ * was intended to be heavily alterted for populating the environment
+ * with hazards but since this grid and path-finding was dropped it is an
+ * unfinished and ommited script.
+ */
 public class MapGrid : MonoBehaviour
 {
     private static GameObject grid;
