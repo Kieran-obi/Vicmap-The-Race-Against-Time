@@ -82,6 +82,10 @@ public class GameManager : MonoBehaviour
             {
                 game.SetActive(false);
             }
+            else if (game.scene.name == "CameraDesk")
+            {
+                game.SetActive(false);
+            }
         }
         
     }
@@ -109,6 +113,10 @@ public class GameManager : MonoBehaviour
                 cam.enabled = false;
             }
             if (cam.name == "Pin_MainCamera")
+            {
+                cam.enabled = false;
+            }
+            if (cam.name == "Cams_MainCamera")
             {
                 cam.enabled = false;
             }

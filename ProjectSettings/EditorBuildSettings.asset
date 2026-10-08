@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PinBoard.unity
     guid: 051ce84f9495fce4299cc7640ba3ca10
+  - enabled: 1
+    path: Assets/Scenes/CameraDesk.unity
+    guid: 4e4c9a1a769c58f4b84e42ef884f13e8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
