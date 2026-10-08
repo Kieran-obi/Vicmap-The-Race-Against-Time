@@ -104,7 +104,7 @@ A persistent manager with separate sources for music, storm ambience, sound effe
 | Member | Contribution |
 | --- | --- |
 | Niki D'Arcy | **Write here** |
-| Dulara Prasad Rathnamalala Rathnamalala Bandaralage | **Write here** |
+| Dulara Prasad Rathnamalala Rathnamalala Bandaralage | Weather system: `WeatherEvent` and `WeatherManager`, which schedule the three storm stages on a timeline (with a chance value) and broadcast each stage as an event that other systems listen to. Storm progress bar HUD: `StormProgressUI` (fill bar and gliding cloud marker) and `StormStageTracker` (counts fired stages). `StormProgressPersistence` and `WeatherManagerPersistence`: keep both systems alive across scenes without duplicates. |
 | Jericho Gonzalez | **Write here** |
 | Kieran O'Brien | Caller scenario design and the call data (call and location assets, including map positions). Dialogue templates. `CallManager`: stage call queues, dialogue box, call resolution and the end screen. `AudioManager`: background music, storm ambience and the phone ring. |
 
