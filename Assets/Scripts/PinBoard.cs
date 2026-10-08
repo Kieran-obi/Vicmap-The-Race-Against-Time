@@ -9,20 +9,19 @@ using TMPro;
 public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
 {
     private Vector2 _distance;
-    public GameObject note;
-    private GameObject new_note;
     private Collider2D coll;
     public Transform parent;
     private List<GameObject> notes = new List<GameObject>();
     private string static_note;
-    private bool select;
 
+    public GameObject note;
+    private GameObject new_note;
     public TextMeshPro text_obj;
     public TMP_InputField input;
+    private TextMeshPro new_text;
+
     public Canvas canvas;
     private GameManager gameManager;
-    private bool added;
-    private TextMeshPro new_text;
     public void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
@@ -32,7 +31,6 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
         }
         coll = GetComponent<Collider2D>();
         static_note = "Note";
-        select = false;
       
         //text_obj = GetComponentInChildren<TextMeshPro>();
       //  if(input  != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
