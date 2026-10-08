@@ -5,10 +5,11 @@ public class EventMaskSwitcher : MonoBehaviour
 {
     //private Camera cam;
     private Physics2DRaycaster ray;
+    private Physics2DRaycaster ray2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -17,7 +18,7 @@ public class EventMaskSwitcher : MonoBehaviour
         GameManager gameManager = FindFirstObjectByType<GameManager>();
         foreach (Camera cam in gameManager.allCams)
         {
-            Physics2DRaycaster ray = cam.GetComponent<Physics2DRaycaster>();
+            ray = cam.GetComponent<Physics2DRaycaster>();
             if (cam.name == "Surv_MainCamera")
             {
                 ray.eventMask = LayerMask.GetMask("SurvRoom");
@@ -42,6 +43,9 @@ public class EventMaskSwitcher : MonoBehaviour
                     else if (other_cam.name == "Cams_MainCamera" && !cam.enabled && other_cam.enabled)
                     {
                         ray.eventMask = LayerMask.GetMask("CameraDesk");
+                        ray2 = other_cam.GetComponent<Physics2DRaycaster>();
+                        ray.enabled = false;
+                        ray2.enabled = true;
                     }
                 }
             }
