@@ -30,6 +30,11 @@ public class CallManager : MonoBehaviour
     {
         pendingCall = currentStageQueue[0];
         phone.SetRinging(true);
+
+        // Freeze the storm clock from the moment the phone rings.
+        // OnContinuePressed() releases it when the call ends.
+        if (WeatherManager.Instance != null) WeatherManager.Instance.isPaused = true;
+
     }
 
     public void AnswerPhone()

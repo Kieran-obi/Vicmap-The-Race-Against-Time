@@ -52,6 +52,8 @@ public class WeatherManager : MonoBehaviour
         // Loop through all scheduled weather events
         foreach (var entry in timeline)
         {
+            if (isPaused) break;// a fired event (an incoming call) may have just paused us
+
             // If the event time has passed and we haven't fired it yet
             if (entry.timestamp <= currentRuntime && !processedEvents.Contains(entry))
             {
