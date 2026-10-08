@@ -28,7 +28,16 @@ public class WeatherManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        // The first WeatherManager keeps the slot. A duplicate (which
+        // WeatherManagerPersistence destroys) must not take it over.
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Debug.Log("[WeatherManager] Duplicate created - keeping the original as Instance.");
+        }
     }
 
     private void Update()
@@ -52,6 +61,8 @@ public class WeatherManager : MonoBehaviour
         // Loop through all scheduled weather events
         foreach (var entry in timeline)
         {
+            if (isPaused) break;// a fired event (an incoming call) may have just paused us
+
             // If the event time has passed and we haven't fired it yet
             if (entry.timestamp <= currentRuntime && !processedEvents.Contains(entry))
             {
