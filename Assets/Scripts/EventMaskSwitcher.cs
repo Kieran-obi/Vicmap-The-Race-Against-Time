@@ -3,16 +3,10 @@ using UnityEngine.EventSystems;
 
 public class EventMaskSwitcher : MonoBehaviour
 {
-    //private Camera cam;
     private Physics2DRaycaster ray;
     private Physics2DRaycaster ray2;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private Physics2DRaycaster ray3;
 
-    // Update is called once per frame
     void Update()
     {
         GameManager gameManager = FindFirstObjectByType<GameManager>();
@@ -21,6 +15,12 @@ public class EventMaskSwitcher : MonoBehaviour
             ray = cam.GetComponent<Physics2DRaycaster>();
             if (cam.name == "Surv_MainCamera")
             {
+                if (cam.enabled)
+                {
+                    if (ray != null) ray.enabled = true;
+                    if (ray2 != null) ray2.enabled = false;
+                    if (ray3 != null) ray3.enabled = false;
+                }
                 ray.eventMask = LayerMask.GetMask("SurvRoom");
                 foreach(Camera other_cam in gameManager.allCams)
                 {
@@ -39,13 +39,18 @@ public class EventMaskSwitcher : MonoBehaviour
                     else if (other_cam.name == "Pin_MainCamera" && !cam.enabled && other_cam.enabled)
                     {
                         ray.eventMask = LayerMask.GetMask("PinBoard");
+                        ray3 = other_cam.GetComponent<Physics2DRaycaster>();
+                        if(ray != null )ray.enabled = false;
+                        if (ray2 != null) ray2.enabled = false;
+                        if (ray3 != null) ray3.enabled = true;
                     }
                     else if (other_cam.name == "Cams_MainCamera" && !cam.enabled && other_cam.enabled)
                     {
                         ray.eventMask = LayerMask.GetMask("CameraDesk");
                         ray2 = other_cam.GetComponent<Physics2DRaycaster>();
-                        ray.enabled = false;
-                        ray2.enabled = true;
+                        if (ray != null) ray.enabled = false;
+                        if (ray2 != null) ray2.enabled = true;
+                        if (ray3 != null) ray3.enabled = false;
                     }
                 }
             }
