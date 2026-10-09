@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WeatherManager : MonoBehaviour
 {
@@ -19,11 +20,22 @@ public class WeatherManager : MonoBehaviour
     [SerializeField] private float tickRate = 5.0f;
     [SerializeField] private List<ScheduledEvent> timeline = new List<ScheduledEvent>();
 
+    [Header("Scene Control")]
+    [Tooltip("The weather starts when this scene loads. Must match the scene name exactly.")]
+    [SerializeField] private string gameplaySceneName = "VicmapRoom";
+    [Tooltip("The weather resets when this scene loads. Must match the scene name exactly.")]
+    [SerializeField] private string menuSceneName = "Main_Menu";
+
     // Global event hook that other scripts can listen to
     public static event Action<WeatherEvent> OnWeatherEventFired;
 
+    // Fired when a new run begins, so other systems (e.g. the storm
+    // progress bar) can reset themselves.
+    public static event Action OnWeatherReset;
+
     private float timer = 0f;
     private float elapsedRunTime = 0f;
+    private bool isRunning = false;
     private List<ScheduledEvent> processedEvents = new List<ScheduledEvent>();
 
     private void Awake()
@@ -40,9 +52,34 @@ public class WeatherManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        // Unity's own built-in event, announced every time a scene loads.
+        SceneManager.sceneLoaded += HandleSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= HandleSceneLoaded;
+    }
+
+    private void Start()
+    {
+        // A duplicate copy is about to be destroyed, so it must not act.
+        if (Instance != this) return;
+
+        // Covers pressing Play in the Editor with the gameplay scene
+        // already open, where it was never "loaded" from the menu.
+        if (SceneManager.GetActiveScene().name == gameplaySceneName)
+        {
+            StartWeather();
+        }
+    }
+
     private void Update()
     {
-        if (isPaused) return;
+        // The clock only runs while a run is in progress and not paused.
+        if (!isRunning || isPaused) return;
         //increment the background timer over time
         timer += Time.deltaTime;
         elapsedRunTime += Time.deltaTime;
@@ -52,6 +89,46 @@ public class WeatherManager : MonoBehaviour
         {
             timer = 0f; // Reset the tick timer
             CheckTimeline(elapsedRunTime);
+        }
+    }
+
+    // Starts the storm clock. Does nothing if a run is already in progress,
+    // so returning from a CCTV scene can't restart a storm that's underway.
+    public void StartWeather()
+    {
+        if (isRunning) return;
+
+        isRunning = true;
+        Debug.Log("[WeatherManager] Weather started.");
+    }
+
+    // Stops the storm and wipes its progress, ready for a new run.
+    // Clearing processedEvents matters: without it, a replay would think
+    // every event had already fired and never fire any.
+    public void ResetWeather()
+    {
+        isRunning = false;
+        isPaused = false;
+        timer = 0f;
+        elapsedRunTime = 0f;
+        processedEvents.Clear();
+
+        OnWeatherReset?.Invoke();
+        Debug.Log("[WeatherManager] Weather reset.");
+    }
+
+    private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // A duplicate copy is about to be destroyed, so it must not act.
+        if (Instance != this) return;
+
+        if (scene.name == menuSceneName)
+        {
+            ResetWeather();
+        }
+        else if (scene.name == gameplaySceneName)
+        {
+            StartWeather();
         }
     }
 
