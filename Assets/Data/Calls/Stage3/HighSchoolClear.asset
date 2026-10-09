@@ -17,7 +17,7 @@ MonoBehaviour:
   actualLocation: {fileID: 11400000, guid: c99ddc75298928446bd1810446255e55, type: 2}
   claimType: 4
   claimVars:
-  - Camberwell High School
+  - Belwyn High School
   - a place for refuge
   issueType: 2
   hasCamera: 1
