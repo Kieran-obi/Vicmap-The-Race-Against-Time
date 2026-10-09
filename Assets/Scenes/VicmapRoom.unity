@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 386719058}
   - component: {fileID: 386719057}
   - component: {fileID: 386719056}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2982,7 +2982,7 @@ GameObject:
   - component: {fileID: 632545439}
   - component: {fileID: 632545441}
   - component: {fileID: 632545440}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: endPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4803,7 +4803,7 @@ GameObject:
   - component: {fileID: 993766205}
   - component: {fileID: 993766204}
   - component: {fileID: 993766203}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6786,6 +6786,8 @@ MonoBehaviour:
       eventName: lighting
       intensity: 1
       chance: 1
+  gameplaySceneName: VicmapRoom
+  menuSceneName: Main_Menu
 --- !u!4 &1376322341
 Transform:
   m_ObjectHideFlags: 0
@@ -7321,7 +7323,7 @@ GameObject:
   - component: {fileID: 1499174195}
   - component: {fileID: 1499174197}
   - component: {fileID: 1499174196}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9715,7 +9717,7 @@ GameObject:
   - component: {fileID: 2058054171}
   - component: {fileID: 2058054170}
   - component: {fileID: 2058054169}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: endText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
