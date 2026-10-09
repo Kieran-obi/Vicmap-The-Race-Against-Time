@@ -85,7 +85,11 @@ A storm event queues the next call and the phone rings. Answering shows the dial
 [Dulara]
 
 **View and camera switching** (`GameManager`, `SceneTransitionInteractable`, `SceneSwitcher`, `EventMaskSwitcher`)
-[Niki]
+GameManager handles the scene type and cameras. The game has to run asynchronously due to the CRT camera render textures.
+Async allows for a live feed of the scenes to the cameras. SceneSwitcher is attached to objects with a 2D Colliders and switches out
+the cameras on click. EventMaskSwitcher sets the event mask of the 2D Raycaster component on the main camera. Depending on the
+scene, there are multiple 2d raycasters and in their case they have to be toggled on and the main toggled off so the click interactions
+work. SceneTransitionInteractable allows for scene switching on key press (E).
 
 **Hazard placement** (`HazardManager`, `HazardDraggable`, `HazardSpawner`, `MapPanZoom`)
 [Jericho]
@@ -98,12 +102,23 @@ A persistent manager with separate sources for music, storm ambience, sound effe
 
 **Pinboard** (`PinBoard`)
 [Niki]
+Handles the PinBoard scene, allowing the player to create and type on notes. This is intended to memorising what is happening in the environment.
+
+**Settings** (`Settings`)
+[Niki]
+A script to handle the settings in the Settings scene. Features a resolution switcher.
+
+**Pause Menu** (`PauseMenu`)
+A simple menu that the player can access with the ESC button. Consists of functions for pausing and resuming the game, which is attached to the "Menu" canvas
+in the VicmapRoom scene.
+
 
 ## Team Contributions
 
 | Member | Contribution |
 | --- | --- |
-| Niki D'Arcy | **Write here** |
+| Niki D'Arcy | Pause menu, settings menu, main menu and game scenes blocking/visuals, camera switching mechanics including cullings masks and layer handling, sprite 
+and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `EventMaskSwitcher`, `PinBoard`, `Settings` |
 | Dulara Prasad Rathnamalala Rathnamalala Bandaralage | Weather system: `WeatherEvent` and `WeatherManager`, which schedule the three storm stages on a timeline (with a chance value) and broadcast each stage as an event that other systems listen to. Storm progress bar HUD: `StormProgressUI` (fill bar and gliding cloud marker) and `StormStageTracker` (counts fired stages). `StormProgressPersistence` and `WeatherManagerPersistence`: keep both systems alive across scenes without duplicates. |
 | Jericho Gonzalez | **Write here** |
 | Kieran O'Brien | Caller scenario design and the call data (call and location assets, including map positions). Dialogue templates. `CallManager`: stage call queues, dialogue box, call resolution and the end screen. `AudioManager`: background music, storm ambience and the phone ring. |
@@ -115,4 +130,4 @@ A persistent manager with separate sources for music, storm ambience, sound effe
 - **Calls not yet scored:** people trapped and uncertain calls are not scored or included right now, and won't appear on the end screen.
 - **Placement tolerance:** a block counts as correct if it is within a set distance of the location's icon. Blocks placed beside an icon, and not pretty much on top of it, can still count as a miss.
 - **Pathing:** the grid and path-finding groundwork (`MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`) is not connected to gameplay. Unsure if this will be used in Assignment 3 or not.
-- **Anything else i missed?**
+- **Notes getting stuck in the middle-top-left of the screen, making it undraggable**
