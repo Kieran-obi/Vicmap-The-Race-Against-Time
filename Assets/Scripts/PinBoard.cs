@@ -6,7 +6,7 @@ using UnityEditor;
 using Unity.VisualScripting;
 using TMPro;
 
-public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
+public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler
 {
     private Vector2 _distance;
     private Collider2D coll;
@@ -20,6 +20,8 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
     public TMP_InputField input;
     private TextMeshPro new_text;
 
+    public RectTransform binZone;
+
     public Canvas canvas;
     private GameManager gameManager;
     public void Start()
@@ -31,9 +33,9 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
         }
         coll = GetComponent<Collider2D>();
         static_note = "Note";
-      
+
         //text_obj = GetComponentInChildren<TextMeshPro>();
-      //  if(input  != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
+        //  if(input  != null) input.onValueChanged.AddListener(text => noteText(text_obj, text));
     }
 
     private void Update()
@@ -53,6 +55,22 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
         {
             Vector2 cursorPos = Camera.main.ScreenToWorldPoint(eventData.position);
             transform.position = cursorPos - _distance;
+        }
+
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        //used logic in HazzardDragable and altered it
+        bool droppedOnBin = binZone != null && RectTransformUtility.RectangleContainsScreenPoint(
+                binZone, eventData.position, eventData.pressEventCamera);
+        if (droppedOnBin)
+        {
+            if (notes.Contains(note) && note.name != static_note)
+            {
+                notes.Remove(note);
+                Destroy(note);
+            }
         }
         
     }
@@ -77,16 +95,15 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
 
                 if (notes.Count < 20)
                 {
-                    if(input.text != "") new_note = Instantiate(note);
+                    if(input.text != "") new_note = Instantiate(note, parent, false);
                     new_text = new_note.GetComponentInChildren<TextMeshPro>();
 
-                    new_note.transform.SetParent(parent);
+                    //new_note.transform.SetParent(parent);
                     for (int i = 0; i < notes.Count; i++)
                     {
                         new_note.name = $"Note{i + 1}";
-                        static_note = $"Note{i}";
+                        //static_note = $"Note{i}";
                         note.name = static_note;
-                        new_note.name = $"text{i}";
                         
                     }
                     new_text.text = input.text;
