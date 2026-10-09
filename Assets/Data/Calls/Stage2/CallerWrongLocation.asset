@@ -15,7 +15,7 @@ MonoBehaviour:
   stormStage: 2
   callerLocation: {fileID: 11400000, guid: b8c9aba8b39f4ab418013d500cf56c96, type: 2}
   actualLocation: {fileID: 11400000, guid: 2b57cef19e720c84392d28aba8d60d7b, type: 2}
-  claimType: 2
+  claimType: 1
   claimVars:
   - Kew Ambulance Station
   - flooded
