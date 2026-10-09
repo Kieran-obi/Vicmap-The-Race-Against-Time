@@ -40,14 +40,6 @@ The challenge from the Department of Transport and Planning asks for a game wher
 - Drag a block to position it on the map. Drag it onto the bin to delete it.
 - Use the scroll wheel to zoom.
 
-### Pin-board view
-
-- How does the pin-board work
-
-### Camera desk view
-
-- How does the camera work
-
 ## How to Play
 
 1. Start the game from the main menu.
@@ -68,7 +60,7 @@ Only road block, flood and all-clear calls are scored at the moment (see Known I
 ### From the Repository
 
 1. Download the build from our [Git repository](https://github.com/Kieran-obi/Vicmap-The-Race-Against-Time).
-2. Unzip the folder and run **[executable name].exe**.
+2. Unzip and in the Build folder run **Vicmap - The Race Against Time.exe**.
 3. Choose **Play** on the main menu.
 
 **To run from the Unity project:** open the project folder with Unity Hub using Unity **6000.3.21f1**, open `Assets/Scenes/Main_Menu`, and press Play.
