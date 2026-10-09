@@ -60,8 +60,11 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         _distance = Camera.main.ScreenToWorldPoint(eventData.position) - (Vector3)transform.position;
-        addNote();
-        input.text = "";
+        if(input.text != "")
+        {
+            addNote();
+            input.text = "";
+        }
     }
 
     public void addNote()
@@ -74,7 +77,7 @@ public class PinBoard : MonoBehaviour, IPointerDownHandler, IDragHandler
 
                 if (notes.Count < 20)
                 {
-                    new_note = Instantiate(note);
+                    if(input.text != "") new_note = Instantiate(note);
                     new_text = new_note.GetComponentInChildren<TextMeshPro>();
 
                     new_note.transform.SetParent(parent);
