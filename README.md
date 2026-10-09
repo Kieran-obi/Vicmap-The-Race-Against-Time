@@ -101,11 +101,9 @@ work. SceneTransitionInteractable allows for scene switching on key press (E).
 A persistent manager with separate sources for music, storm ambience, sound effects and the phone ring.
 
 **Pinboard** (`PinBoard`)
-[Niki]
 Handles the PinBoard scene, allowing the player to create and type on notes. This is intended to memorising what is happening in the environment.
 
-**Settings** (`Settings`)
-[Niki]
+**Settings** (`Settings_Menu`)
 A script to handle the settings in the Settings scene. Features a resolution switcher.
 
 **Pause Menu** (`PauseMenu`)
@@ -118,7 +116,8 @@ in the VicmapRoom scene.
 | Member | Contribution |
 | --- | --- |
 | Niki D'Arcy | Pause menu, settings menu, main menu and game scenes blocking/visuals, camera switching mechanics including cullings masks and layer handling, sprite 
-and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `EventMaskSwitcher`, `PinBoard`, `Settings` |
+and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `EventMaskSwitcher`, `PinBoard`, `Settings` and unused scripts 
+`MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`. Made 2 sprite animations for a cat and dog sprite I downloaded. Set up shaders. |
 | Dulara Prasad Rathnamalala Rathnamalala Bandaralage | Weather system: `WeatherEvent` and `WeatherManager`, which schedule the three storm stages on a timeline (with a chance value) and broadcast each stage as an event that other systems listen to. Storm progress bar HUD: `StormProgressUI` (fill bar and gliding cloud marker) and `StormStageTracker` (counts fired stages). `StormProgressPersistence` and `WeatherManagerPersistence`: keep both systems alive across scenes without duplicates. |
 | Jericho Gonzalez | **Write here** |
 | Kieran O'Brien | Caller scenario design and the call data (call and location assets, including map positions). Dialogue templates. `CallManager`: stage call queues, dialogue box, call resolution and the end screen. `AudioManager`: background music, storm ambience and the phone ring. |
@@ -129,5 +128,5 @@ and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `E
 - **Saved hazards:** hazard blocks are saved to a file between sessions, so blocks from a previous run can still be on the map. Delete them by dragging them to the bin before you start. Or just use the same placements and you'll get the same score, there is only three calls for the prototype.
 - **Calls not yet scored:** people trapped and uncertain calls are not scored or included right now, and won't appear on the end screen.
 - **Placement tolerance:** a block counts as correct if it is within a set distance of the location's icon. Blocks placed beside an icon, and not pretty much on top of it, can still count as a miss.
-- **Pathing:** the grid and path-finding groundwork (`MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`) is not connected to gameplay. Unsure if this will be used in Assignment 3 or not.
-- **Notes getting stuck in the middle-top-left of the screen, making it undraggable**
+- **Pathing:** the grid and path-finding groundwork (`MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`) is not connected to gameplay. Some or all of these will likely be used for assignment 3.
+- **Notes:** getting stuck in the middle-top-left of the screen, making it undraggable or hard to drag.
