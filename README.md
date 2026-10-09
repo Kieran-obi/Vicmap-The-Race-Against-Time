@@ -2,7 +2,7 @@
 
 ## Developed by
 
-- Niki D'Arcy
+- Niki D'Arcy (102106269)
 - Dulara Prasad Rathnamalala Rathnamalala Bandaralage (105518249)
 - Jericho Gonzalez
 - Kieran O'Brien (105179073)
