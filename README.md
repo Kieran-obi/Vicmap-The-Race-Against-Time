@@ -81,8 +81,8 @@ Every call is a ScriptableObject asset holding its storm stage, caller location,
 **Call flow, resolution and end screen** (`CallManager`, `PhoneInteractable`, `MapSubmitButton`)
 A storm event queues the next call and the phone rings. Answering shows the dialogue box, then Continue lets the player move again to interact with the map/cameras/pinboard, then the Submit button on the map will score the call. Scoring compares the placed hazards with the expected hazard type and the location's map position, within a tolerance (which needs fine tuning). Each result is recorded and shown on the end screen with a lesson based on the call's issue.
 
-**Weather and storm progress** (`WeatherManager`, `WeatherEvent`, `StormStageTracker`, `StormProgressUI`)
-[Dulara]
+**Weather and storm progress** (`WeatherManager`, `WeatherEvent`, `StormStageTracker`, `StormProgressUI`, `StormProgressPersistence`, `WeatherManagerPersistence`)
+`WeatherEvent` stores a storm stage's name, intensity and chance. `WeatherManager` keeps a timeline of scheduled events and its own clock, which only runs while a game is in progress and isn't paused. On each tick (5 seconds by default) it fires every event whose time has passed, subject to its chance, through a static event that `CallManager` listens to when queueing the next call. The clock freezes when a call rings and resumes after the player submits on the map. It starts when the game scene loads and resets when the main menu loads, so a replay starts fresh. `StormStageTracker` counts the stages fired, and `StormProgressUI` fills the progress bar and glides the cloud marker along it.`StormProgressPersistence` and `WeatherManagerPersistence` keep the bar and the weather manager alive between scenes without creating duplicates.
 
 **View and camera switching** (`GameManager`, `SceneTransitionInteractable`, `SceneSwitcher`, `EventMaskSwitcher`)
 GameManager handles the scene type and cameras. The game has to run asynchronously due to the CRT camera render textures.
