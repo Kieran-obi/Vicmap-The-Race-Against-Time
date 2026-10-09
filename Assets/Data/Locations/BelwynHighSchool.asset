@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6ad737d9acaa5f46bd17a8513a7bd7c, type: 3}
-  m_Name: CamberwellHighSchool
+  m_Name: BelwynHighSchool
   m_EditorClassIdentifier: Assembly-CSharp::LocationData
-  locationName: Camberwell High School
+  locationName: Belwyn High School
   gameX: 57.03
   gameY: 60.1
   mapAnchoredPosition: {x: 494, y: 338}

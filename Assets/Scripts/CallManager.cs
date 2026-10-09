@@ -166,7 +166,7 @@ public class CallManager : MonoBehaviour
         foreach (var r in results)
             sb.AppendLine($"{(r.correct ? "Correct" : "Missed")} - {r.name}: {Lesson(r)}");
 
-        sb.AppendLine("\nWhen time matters, knowing what is where, and trusting that information, makes the difference.");
+        sb.AppendLine("\nWhen time matters, knowing what is where, and trusting that information, makes the difference. Correct and slow over fast and wrong");
 
         endText.text = sb.ToString();
         endPanel.SetActive(true);
@@ -179,7 +179,7 @@ public class CallManager : MonoBehaviour
         {
             IssueType.Mislocated     => "The reported location didn't match the real one. Check it against another source first.",
             IssueType.Outdated       => "The map information was out of date.",
-            IssueType.Missing        => "A feature was missing from the map.",
+            IssueType.Missing        => "A place was missing from the map.",
             IssueType.Misclassified  => "A place was listed as the wrong type.",
             _                        => "The report was accurate, but the response didn't match it."
         };
