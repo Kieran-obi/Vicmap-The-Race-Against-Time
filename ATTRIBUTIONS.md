@@ -2,7 +2,8 @@
 
 ## Art Assets - Third Party
 
-- Third-party assets credited here
+- Sky Cloud PNG -- [Fluffy cloud formation in sky Free PNG by Chaowat Rittizin / Vecteezy](https://www.vecteezy.com/png/65848252-fluffy-cloud-formation-in-sky) -- License: Vecteezy Free License (Attribution Required)
+- Empty Background Progress Bar PNG -- [Progress Bar Empty PNGs by Vecteezy](https://vecteezy.com) -- License: Vecteezy Free License (Attribution Required)
 
 ## Art Assets - Team Originals
 
