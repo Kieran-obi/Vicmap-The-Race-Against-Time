@@ -92,10 +92,10 @@ scene, there are multiple 2d raycasters and in their case they have to be toggle
 work. SceneTransitionInteractable allows for scene switching on key press (E).
 
 **Hazard placement** (`HazardManager`, `HazardDraggable`, `HazardSpawner`, `MapPanZoom`)
-[Jericho]
+Hazard blocks are spawned from prefabs, dragged onto the map which is capable of panning and zooming, deleted at the bin, saved to a JSON file.
 
 **Interaction and movement** (`InteractableObject`, `PlayerController`)
-[Jericho?]
+A reusable class for objects the player walks up to and press E on, with an outline when in range. Movement is turn and walk behaviour and animated sprites.
 
 **Audio** (`AudioManager`)
 A persistent manager with separate sources for music, storm ambience, sound effects and the phone ring.
@@ -110,16 +110,13 @@ A script to handle the settings in the Settings scene. Features a resolution swi
 A simple menu that the player can access with the ESC button. Consists of functions for pausing and resuming the game, which is attached to the "Menu" canvas
 in the VicmapRoom scene.
 
-
 ## Team Contributions
 
 | Member | Contribution |
 | --- | --- |
-| Niki D'Arcy | Pause menu, settings menu, main menu and game scenes blocking/visuals, camera switching mechanics including cullings masks and layer handling, sprite 
-and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `EventMaskSwitcher`, `PinBoard`, `Settings` and unused scripts 
-`MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`. Made 2 sprite animations for a cat and dog sprite I downloaded. Set up shaders. |
+| Niki D'Arcy | Pause menu, settings menu, main menu and game scenes blocking/visuals, camera switching mechanics including cullings masks and layer handling, sprite and map  visual editing in Clip Studio Paint, `GameManager`, `SceneSwitcher`, `EventMaskSwitcher`, `PinBoard`, `Settings` and unused scripts `MapGrid`, `DijkstraBehaviour`, `CivilianBehaviour`. Made 2 sprite animations for a cat and dog sprite I downloaded. Set up shaders. |
 | Dulara Prasad Rathnamalala Rathnamalala Bandaralage | Weather system: `WeatherEvent` and `WeatherManager`, which schedule the three storm stages on a timeline (with a chance value) and broadcast each stage as an event that other systems listen to. Storm progress bar HUD: `StormProgressUI` (fill bar and gliding cloud marker) and `StormStageTracker` (counts fired stages). `StormProgressPersistence` and `WeatherManagerPersistence`: keep both systems alive across scenes without duplicates. |
-| Jericho Gonzalez | **Write here** |
+| Jericho Gonzalez | The map of Boroondara with `HazardManager`, `HazardDraggable`, `HazardSpawner`, `MapPanZoom`. Created player interaction and movement, `InteractableObject`, `PlayerController` |
 | Kieran O'Brien | Caller scenario design and the call data (call and location assets, including map positions). Dialogue templates. `CallManager`: stage call queues, dialogue box, call resolution and the end screen. `AudioManager`: background music, storm ambience and the phone ring. |
 
 ## Known Issues
