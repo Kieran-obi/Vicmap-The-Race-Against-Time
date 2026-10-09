@@ -396,8 +396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d928b43c91ad5244d8d95f82f22afdf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PinBoard
-  note: {fileID: 341239915}
   parent: {fileID: 724898408}
+  note: {fileID: 341239915}
   text_obj: {fileID: 1272716110}
   input: {fileID: 464407552}
   canvas: {fileID: 1707887075}
@@ -429,7 +429,7 @@ RectTransform:
   m_GameObject: {fileID: 464407550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.6455, y: 9.6455, z: 9.6455}
+  m_LocalScale: {x: 3.979462, y: 3.979462, z: 3.979462}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1977085896}
@@ -437,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -825}
+  m_AnchoredPosition: {x: 0, y: -301}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464407552
